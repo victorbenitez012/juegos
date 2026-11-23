@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Juegos · Taller de Victor</title>
+<meta name="description" content="Juegos para el navegador: Cubo de Rubik 3D, Enjambre Estelar y Derrumbe. Gratis, sin instalar nada.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Barlow:wght@400;600&display=swap">
+<style>
+:root{--bg:#14121a;--card:#1f1c28;--fg:#f1ecff;--muted:#a59fb8;--line:#332f42;--accent:#ffb02e;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Barlow,system-ui,sans-serif;padding-block:48px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font:400 clamp(2rem,6vw,3.2rem)/1 Bungee,system-ui,sans-serif;margin:0;color:var(--accent);text-wrap:balance}
+p.sub{margin:8px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+a.j{display:flex;flex-direction:column;gap:6px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--fg);text-decoration:none;transition:transform .15s,border-color .15s}
+a.j:hover,a.j:focus-visible{transform:translateY(-3px);border-color:var(--accent);outline:none}
+a.j b{font:400 1.25rem Bungee,system-ui,sans-serif}
+a.j span{color:var(--muted);flex:1}
+a.j i{font-style:normal;font-weight:600;color:var(--accent)}
+footer{color:var(--muted);font-size:.85rem}
+footer a{color:var(--muted)}
+@media (prefers-reduced-motion:reduce){a.j{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <div><h1>Juegos</h1><p class="sub">Para jugar en el navegador, en la compu o el celular. Gratis y sin instalar nada.</p></div>
+  <div class="grid">
+  <a class="j" href="cubo-rubik/"><b>Cubo de Rubik 3D</b><span>Girá las caras con el dedo o el mouse, mezclalo y armalo.</span><i>Jugar →</i></a>
+  <a class="j" href="enjambre-estelar/"><b>Enjambre Estelar</b><span>Manejá la nave y frená al enjambre antes de que te alcance.</span><i>Jugar →</i></a>
+  <a class="j" href="derrumbe/"><b>Derrumbe</b><span>Acomodá los bloques que caen antes de que se llene todo.</span><i>Jugar →</i></a>
+  </div>
+  <footer>Taller de Victor · También: <a href="https://victorbenitez012.github.io/optimizador-placas/">Optimizador de placas</a></footer>
+</main>
+<p id="visitas" style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none"></p><script>if (location.hostname.endsWith("github.io")) document.getElementById("visitas").innerHTML = '<img src="https://hits.sh/victorbenitez012.github.io/juegos.svg" alt="" width="1" height="1">';</script>
+</body>
+</html>
